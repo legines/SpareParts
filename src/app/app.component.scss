@@ -1,0 +1,25 @@
+.main {
+    max-width: 736px;
+    margin: 0 auto;
+    padding: 0 1em;
+    &-header {
+        margin-bottom: 2em;
+    }
+    &-content {
+        border-bottom: 1px solid #44444d;
+        .post {
+            font-family: arial,helvetica,sans-serif;
+            &-title {
+                color: #b294bb;
+                font-weight: 700;
+                font-size: 1em;
+            }
+            &-content {
+                color: #c5c8c6;
+                p {
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
