@@ -3,15 +3,9 @@
     <img [src]="logoUrl" alt="Logo" id="logo">
   </div>
   <div class="main-content">
-    <div class="post">
-      <p class="post-title">
-        Welcome to Spare Parts: Special Edition
-      </p>
-      <div class="post-content">
-        <p>
-          Lowered cars, very slightly stretched tired, and wheels that sit flush with the fenders are all that we need. A simple and clean look.
-          Bags / coilovers / springs, who cares? That is not as important as making the effort into creating a quality build. Make the best with what you have and stay clean.
-      </div>
-    </div>
+    @for (post of posts; track post.id) {
+      <post-component [post]="post">
+      </post-component>
+    }
   </div>
 </div>

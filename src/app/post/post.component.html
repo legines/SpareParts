@@ -1,0 +1,48 @@
+<div class="post">
+    <p class="post-title">
+      {{ post.postTitle }}
+    </p>
+    <div class="post-content">
+      <p>
+        {{ post.contentOne }}
+      </p>
+      @if (post.contentSource) {
+        <a [href]="post.contentSource" class="table-source-link">
+          {{ post.contentSourceText }}
+        </a>
+      }
+      <p>
+        {{ post.contentTwo }}
+      </p>
+      <p>
+        {{ post.contentThree }}
+      </p>
+      <p>
+        {{ post.contentFour }}
+      </p>
+      @if (post.tableData) {
+        <table>
+          <tr>
+            @for (header of post.tableData.headers; track header) {
+              <th>{{ header }}</th>
+            }
+          </tr>
+          @for (row of post.tableData.rows; track row) {
+            <tr>
+              @for (rowItem of row; track rowItem) {
+                <td>{{ rowItem }}</td>
+              }
+            </tr>
+          }
+        </table>
+      }
+      @if (post.tableSource) {
+        <p class="table-source-text">
+          Source for table and additional info:
+        </p>
+        <a [href]="post.tableSource" class="table-source-link">
+          {{ post.tableSourceText }}
+        </a>
+      }
+    </div>
+  </div>

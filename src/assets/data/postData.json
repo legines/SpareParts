@@ -1,0 +1,43 @@
+[
+    {
+        "id": 2,
+        "date": "07-01-2024",
+        "postTitle": "Calculating wheel offsets in general & after changing lip / barrel size",
+        "contentOne": "The first method uses a ruler and another straightedge to calculate the wheels offset. This video from Driftworks in the link below will explain how to do that, and it's exactly what I did.",
+        "contentTwo": "The second method involves resizing your wheels by changing the lip and barrel sizes, if your wheels are multi piece wheels. This will cause positive and negative changes to the offset depending on whether the lip or barrel was resized and by how much. The table below is what I have used to calculate new offsets in the past. Here you can see the change in wheel offset for every inch or half inch change in lip and barrel size.",
+        "contentThree": "As an example, 18 x 11 -6  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 0.35 with a 3 inch lip and a 6.5 inch barrel. The lip was shortened by 1 inch, bringing the offset from -6 to 6.7 ( -6 + 12.7 ), and the barrel was shortened by 0.5 inches, bringing the final offset to 0.35 ( 6.7 - 6.35 ).",
+        "contentFour": "Another example, 18 x 11 -6  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 13.05 with a 2.5 inch lip and a 7 inch barrel. The lip was shortened by 1.5 inches, bringing the offset from -6 to 13.05 ( -6 + 12.7 + 6.35 ).",
+        "contentSource": "https://www.youtube.com/watch?v=L19eoOX58R4",
+        "contentSourceText": "How to measure your Wheel Offset / ET accurately",
+        "bottomPics": [],
+        "midPicsOne": [],
+        "midPicsTwo": [],
+        "topPics": [],
+        "tableData": {
+            "headers": ["", "+ 1 inch", "+ 0.5 inch", "- 0.5 inch", "- 1 inch"],
+            "rows": [
+                ["Lip", "- 12.7", "- 6.35", "+ 6.35", "+ 12.7"],
+                ["Barrel", "+ 12.7", "+ 6.35", "- 6.35", "- 12.7"]
+            ]
+        },
+        "tableSource": "https://stanceworks.com/forums/forum/style/wheels-tires-brakes/3178-how-to-calculate-offset-after-lip-and-or-barrel-change?t=3145",
+        "tableSourceText": "StanceWorks"
+    },
+    {
+        "id": 1,
+        "date": "06-16-2024",
+        "postTitle": "Welcome to Spare Parts: Special Edition",
+        "contentOne": "Once upon a time Spare Parts was a World of Warcraft guild on Ashkandi Horde, built from the remnants of an older guild. I always thought the name sounded better for a car crew. So here we are. I'll be using this site to document my car build, share relevant notes I've taken like calculating offsets / calculating tire stretch / rebuilding or resizing 3 piece wheels etc with sources, and mostly scream into the void. I don't know how often this will be updated, but if anyone even reads this, then I hope it's not terrible :/",
+        "contentTwo": "Lowered cars, very slightly stretched tired, and wheels that sit flush with the fenders are my shit. I'll most likely do exactly that with my next car.",
+        "contentThree": "",
+        "contentSource": "",
+        "contentSourceText": "",
+        "bottomPics": [],
+        "midPicsOne": [],
+        "midPicsTwo": [],
+        "topPics": [],
+        "tableData": [],
+        "tableSource": "",
+        "tableSourceText": ""
+    }
+]
