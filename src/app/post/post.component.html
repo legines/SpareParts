@@ -1,9 +1,9 @@
-<div class="post">
+<div class="post" [id]="post.postTitle.split(' ')[0]">
     <p class="post-title">
       {{ post.postTitle }}
     </p>
     <div class="post-content">
-      <p>
+      <p class="content-one">
         {{ post.contentOne }}
       </p>
       @if (post.contentSource) {
@@ -11,13 +11,31 @@
           {{ post.contentSourceText }}
         </a>
       }
-      <p>
+      @if (post.contentOneExample) {
+        <p class="content-one-example">
+          {{ post.contentOneExample }}
+        </p>
+      }
+      @if (post.topPics) {
+        <div class="mid-pics-container">
+          @for (pic of post.topPics; track pic) {
+            <img [src]="topPicSource(pic)" alt="Mid-pic" class="mid-pic" (click)="openPic(pic)">
+          }
+          @if (post.topPics.length % 2 !== 0) {
+            <img src="" class="mid-pic">
+          }
+        </div>
+      }
+      <div id="lightbox" class="lightbox-container animate" (click)="closePic()">
+        <img [src]="lightBoxPic" alt="Lightbox-pic" class="lightbox-pic">
+      </div>
+      <p class="content-two">
         {{ post.contentTwo }}
       </p>
-      <p>
+      <p class="content-three">
         {{ post.contentThree }}
       </p>
-      <p>
+      <p class="content-four">
         {{ post.contentFour }}
       </p>
       @if (post.tableData) {

@@ -3,6 +3,12 @@
     <img [src]="logoUrl" alt="Logo" id="logo">
   </div>
   <div class="main-content">
+    <select class="post-select" [(ngModel)]="selectedId" (ngModelChange)="scrollIntoView()">
+      <option value="" disabled selected>Select a post</option>
+      <option *ngFor="let post of postIds" [value]="post.id">
+        {{ post.title }}
+      </option>
+    </select>
     @for (post of posts; track post.id) {
       <post-component [post]="post">
       </post-component>

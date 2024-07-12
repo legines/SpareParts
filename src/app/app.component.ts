@@ -3,18 +3,21 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, NgFor, PostComponent, RouterOutlet],
+  imports: [CommonModule, FormsModule, HttpClientModule, NgFor, PostComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   logoArray: string[] = ['assets/logos/SpareParts-black-gold.svg', 'assets/logos/SpareParts-black.svg', 'assets/logos/SpareParts-bright-white.svg', 'assets/logos/SpareParts-gold.svg', 'assets/logos/SpareParts-off-white.svg', 'assets/logos/SpareParts-white-text-only.svg', 'assets/logos/SpareParts-purple.svg'];
   logoUrl: string = ''
+  postIds;
   posts;
+  selectedId: number;
 
   constructor(private http: HttpClient) {}
 
@@ -30,6 +33,11 @@ export class AppComponent implements OnInit {
   buildPosts() {
     this.http.get('/assets/data/postData.json').subscribe(data => {
       this.posts = data;
+      this.postIds = this.posts.map(post => ({id: post.id, title: post.postTitle}));
     });
+  }
+
+  scrollIntoView() {
+    document.getElementById(`${this.selectedId}`).scrollIntoView({behavior: 'smooth'});
   }
 }

@@ -8,13 +8,24 @@ import { Component, Input } from '@angular/core';
   styleUrl: './post.component.scss'
 })
 export class PostComponent {
-  @Input() bottomPics: string[];
-  @Input() contentOne: string;
-  @Input() contentTwo: string;
-  @Input() midPicsOne: string[];
-  @Input() midPicsTwo: string[];
-  @Input() postTitle: string;
-  @Input() tableData;
-  @Input() topPics: string[];
   @Input() post;
+  lightBoxPic = null;
+
+  constructor() {
+    console.log('PostComponent created');
+  }
+
+  topPicSource(pic) {
+    return `../../../assets/post-${this.post.id}/${pic}`;
+  }
+
+  openPic(pic) {
+    this.lightBoxPic = this.topPicSource(pic);
+    document.getElementById('lightbox').classList.add('show');
+  }
+
+  closePic() {
+    this.lightBoxPic = null;
+    document.getElementById('lightbox').classList.remove('show');
+  }
 }
