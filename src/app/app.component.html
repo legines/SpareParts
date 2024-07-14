@@ -5,7 +5,7 @@
   <div class="main-content">
     <select class="post-select" [(ngModel)]="selectedId" (ngModelChange)="scrollIntoView()">
       <option value="" disabled selected>Select a post</option>
-      <option *ngFor="let post of postIds" [value]="post.id">
+      <option *ngFor="let post of postIds" [value]="post.title.split(' ')[0]">
         {{ post.title }}
       </option>
     </select>

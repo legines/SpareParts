@@ -7,13 +7,13 @@
         "contentOneExample": "Although I already know the offset of my wheels, I wanted to try out the method myself. The wheel in the pictures below is a very dirty Work Equip 05 18 x 11 -4. The FIRST picture gives the measurement from the floor which is 302mm and taking half of that to find the centerline of the wheel gives 151mm. The SECOND picture is the measurement from the hub face, which is 155mm. So 151mm - 155mm = -4mm. The offset is -4mm. The THIRD picture is the measurement from the floor to the hub face, which is 155mm. So, 151mm - 155mm = -4mm. The offset is -4mm.",
         "contentTwo": "The second method involves resizing your wheels by changing the lip and barrel sizes, if your wheels are multi piece wheels. This will cause positive and negative changes to the offset depending on whether the lip or barrel was resized and by how much. The table below is what I have used to calculate new offsets in the past. Here you can see the change in wheel offset for every inch or half inch change in lip and barrel size.",
         "contentThree": "As an example, 18 x 11 -4  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 2.35 with a 3 inch lip and a 6.5 inch barrel. The lip was shortened by 1 inch, bringing the offset from -4 to 8.7 ( -4 + 12.7 ), and the barrel was shortened by 0.5 inches, bringing the final offset to 2.35 ( 8.7 - 6.35 ).",
-        "contentFour": "Another example, 18 x 11 -4  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 12.05 with a 2.5 inch lip and a 7 inch barrel. The lip was shortened by 1.5 inches, bringing the offset from -4 to 15.05 ( -6 + 12.7 + 6.35).",
+        "contentFour": "Another example, 18 x 11 -4  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 12.05 with a 2.5 inch lip and a 7 inch barrel. The lip was shortened by 1.5 inches, bringing the offset from -4 to 15.05 ( -4 + 12.7 + 6.35).",
         "contentSource": "https://www.youtube.com/watch?v=L19eoOX58R4",
         "contentSourceText": "How to measure your Wheel Offset / ET accurately",
         "bottomPics": [],
         "midPicsOne": [],
         "midPicsTwo": [],
-        "topPics": ["from_floor_measurement.png", "from_hub_face.png", "hub_face_to_floor.png"],
+        "topPics": ["from_floor_measurement", "from_hub_face", "hub_face_to_floor"],
         "tableData": {
             "headers": ["", "+ 1 inch", "+ 0.5 inch", "- 0.5 inch", "- 1 inch"],
             "rows": [

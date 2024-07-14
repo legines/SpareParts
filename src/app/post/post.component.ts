@@ -15,12 +15,12 @@ export class PostComponent {
     console.log('PostComponent created');
   }
 
-  topPicSource(pic) {
-    return `../../../assets/post-${this.post.id}/${pic}`;
+  topPicSource(pic, size) {
+    return `../../../assets/post-${this.post.id}/${pic}_${size}.png`;
   }
 
   openPic(pic) {
-    this.lightBoxPic = this.topPicSource(pic);
+    this.lightBoxPic = this.topPicSource(pic, 'big');
     document.getElementById('lightbox').classList.add('show');
   }
 

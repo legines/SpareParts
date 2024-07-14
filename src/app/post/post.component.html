@@ -19,7 +19,7 @@
       @if (post.topPics) {
         <div class="mid-pics-container">
           @for (pic of post.topPics; track pic) {
-            <img [src]="topPicSource(pic)" alt="Mid-pic" class="mid-pic" (click)="openPic(pic)">
+            <img [src]="topPicSource(pic, 'small')" alt="Mid-pic" class="mid-pic" (click)="openPic(pic)">
           }
           @if (post.topPics.length % 2 !== 0) {
             <img src="" class="mid-pic">
