@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  logoArray: string[] = ['assets/logos/SpareParts-black-gold.svg', 'assets/logos/SpareParts-black.svg', 'assets/logos/SpareParts-bright-white.svg', 'assets/logos/SpareParts-gold.svg', 'assets/logos/SpareParts-off-white.svg', 'assets/logos/SpareParts-white-text-only.svg', 'assets/logos/SpareParts-purple.svg'];
+  logoArray: string[] = ['assets/logos/SpareParts-black-gold.svg', 'assets/logos/SpareParts-black.svg', 'assets/logos/SpareParts-bright-white.svg', 'assets/logos/SpareParts-gold.svg', 'assets/logos/SpareParts-off-white.svg', 'assets/logos/SpareParts-white-text-only.svg', 'assets/logos/SpareParts-purple.svg', 'assets/logos/SpareParts-boulder-grey-pearl.svg'];
   logoUrl: string = ''
   postIds;
   posts;

@@ -11,21 +11,18 @@ export class PostComponent {
   @Input() post;
   lightBoxPic = null;
 
-  constructor() {
-    console.log('PostComponent created');
-  }
-
+  constructor() {}
+  
   topPicSource(pic, size) {
     return `../../../assets/post-${this.post.id}/${pic}_${size}.png`;
   }
 
   openPic(pic) {
     this.lightBoxPic = this.topPicSource(pic, 'big');
-    document.getElementById('lightbox').classList.add('show');
+    document.getElementById(`lightbox-${this.post.id}`).classList.add('show');
   }
 
   closePic() {
-    this.lightBoxPic = null;
-    document.getElementById('lightbox').classList.remove('show');
+    document.getElementById(`lightbox-${this.post.id}`).classList.remove('show');
   }
 }
