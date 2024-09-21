@@ -20,10 +20,21 @@
             cursor: pointer;
         }
     }
+    &-header {
+        display: flex;
+        flex-direction: column;
+    }
     &-title {
         color: #b294bb;
         font-weight: 700;
         font-size: 1em;
+        margin-bottom: 0;
+    }
+    &-date {
+        color: #c5c8c6;
+        font-weight: bold;
+        font-size: 0.8em;
+        margin-top: 0;
     }
     &-content {
         color: #c5c8c6;

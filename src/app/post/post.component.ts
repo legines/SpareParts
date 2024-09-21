@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'post-component',
@@ -7,12 +7,17 @@ import { Component, Input } from '@angular/core';
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss'
 })
-export class PostComponent {
+export class PostComponent implements OnInit {
   @Input() post;
+  emptyTable: boolean;
   lightBoxPic = null;
 
   constructor() {}
   
+  ngOnInit() {
+    this.emptyTable = Object.keys(this.post.tableData).length === 0;
+  }
+
   topPicSource(pic, size) {
     return `../../../assets/post-${this.post.id}/${pic}_${size}.png`;
   }

@@ -1,7 +1,12 @@
 <div class="post" [id]="post.postTitle.split(' ')[0]">
-    <p class="post-title">
-      {{ post.postTitle }}
-    </p>
+    <div class="post-header">
+      <p class="post-title">
+        {{ post.postTitle }}
+      </p>
+      <p class="post-date">
+        {{ post.date }}
+      </p>
+    </div>
     <div class="post-content">
       <p class="content-one">
         {{ post.contentOne }}
@@ -45,6 +50,16 @@
       <p class="content-three">
         {{ post.contentThree }}
       </p>
+      @if (post.midPicsTwo) {
+        <div class="mid-pics-container">
+          @for (pic of post.midPicsTwo; track pic) {
+            <img [src]="topPicSource(pic, 'small')" alt="Mid-pic-two" class="mid-pic" (click)="openPic(pic)">
+          }
+          @if (post.midPicsTwo.length % 2 !== 0) {
+            <img src="" class="mid-pic">
+          }
+        </div>
+      }
       <p class="content-four">
         {{ post.contentFour }}
       </p>
@@ -65,9 +80,11 @@
         </table>
       }
       @if (post.tableSource) {
-        <p class="table-source-text">
-          Source for table and additional info:
-        </p>
+        @if (!emptyTable) {
+          <p class="table-source-text">
+            Source for table and additional info:
+          </p>
+        }
         <a [href]="post.tableSource" class="table-source-link">
           {{ post.tableSourceText }}
         </a>
