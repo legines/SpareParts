@@ -63,6 +63,16 @@
       <p class="content-four">
         {{ post.contentFour }}
       </p>
+      @if (post.bottomPics) {
+        <div class="mid-pics-container">
+          @for (pic of post.bottomPics; track pic) {
+            <img [src]="topPicSource(pic, 'small')" alt="Bottom-pic" class="mid-pic" (click)="openPic(pic)">
+          }
+          @if (post.bottomPics.length % 2 !== 0) {
+            <img src="" class="mid-pic">
+          }
+        </div>
+      }
       @if (post.tableData) {
         <table>
           <tr>
