@@ -1,0 +1,65 @@
+[
+    {
+        "id": 3,
+        "date": "07-18-2024",
+        "postTitle": "Breaking news. Shocking news",
+        "contentOne": "Did you hear the news? Breaking news? Shocking news? There's a new addition to the Spare Parts family: a new Z. I used to own a 2008 350z for 12 years and enjoyed every second with that car. Totally didn't expect to get one yet, but I don't know...I walked into the dealership to browse and the next thing I know I was signing the paperwork and picking the car up the next day. Anyways, the car came with a front lip from Nissan that I may install in the future, although it will probably get scraped up pretty badly once the car is on coilovers. Wheel gap makes me sick.",
+        "contentOneExample": "",
+        "contentTwo": "I bought a Z1 oil catch can the day I signed the paperwork for the car and installed it over the weekend. Catch cans can help remedy a phenomena called blow-by, which is when pressure leaks past the piston rings and into the crankcase (basically the empty space in an engine) when the car is running. In turbo charged cars you have a lot more pressure being created = higher levels of blow-by = higher levels of oil / contaminants getting into the intake system. In theory these catch cans are supposed to collect oil vapor / contaminants before they reach the engine's intake manifold so there isn't a build up of carbon on the intake valves. The catch can collects the contaminants at the bottom and the clean air is passed back into the intake system.",
+        "contentThree": "I had the big brain idea to not follow the instructions when they said to take off the driver side intercooler for more room and instead installed everything with as little room as possible. As long as your hand can fit in a space it's all good right? :/ Removing the hoses and putting in the new ones was easy, it was putting the freaking hose clamps back on that was the issue. What a pain in the ass it was to put those clamps on. After adding lube to the hose / around the clamp and using needle nose pliers I was able to finish in about 5 minutes..I don't know why I always choose to do things the hard way.",
+        "contentFour": " Car forum nerds argue back and forth if catch cans are worth it, however IMO as a preventative measure for future repairs in 70k or 80k miles why wouldn't you get one? Below are some pics of when I recently serviced the catch can after about 750 miles. There is a little bit of oil caught at the bottom. I'll probably service it every 1.5k - 3k miles going forward.",
+        "contentSource": "",
+        "contentSourceText": "",
+        "bottomPics": ["catch_can_top", "caught_oil"],
+        "midPicsOne": [],
+        "midPicsTwo": ["catch_can", "catch_can_installed"],
+        "topPics": ["stylo", "stylo_two", "new_z"],
+        "tableData": {},
+        "tableSource": "https://cdn.z1motorsports.com/upload/Install_Z1_Z_Catch_Can.pdf",
+        "tableSourceText": "Z1 Oil Catch Can install instructions"
+    },
+    {
+        "id": 2,
+        "date": "07-01-2024",
+        "postTitle": "Calculating wheel offsets in general & after changing lip / barrel size",
+        "contentOne": "I like running lower offset wheels. Offset is the measurement of the distance between the wheels mounting surface and the centerline of the wheel. More negative = wheel sticks out more from the fender = more cool (to a degree). You could potentially run into break clearance issues depending on the offset of your wheels, which can be fixed by running some wheel spacers or by doing more reasearch on what offsets are 'ideal' to your needs. The first method uses a ruler and another straight edge to calculate the wheels offset. This video from Driftworks in the link below will explain how to do that, and it's exactly what I did.",
+        "contentOneExample": "Although I already know the offset of my wheels, I wanted to try out the method myself. The wheel in the pictures below is a very dirty Work Equip 05 18 x 11 -4. The FIRST picture gives the measurement from the floor which is 302mm and taking half of that to find the centerline of the wheel gives 151mm. The SECOND picture is the measurement from the hub face, which is 155mm. So 151mm - 155mm = -4mm. The offset is -4mm. The THIRD picture is the measurement from the floor to the hub face, which is 155mm. So, 151mm - 155mm = -4mm. The offset is -4mm.",
+        "contentTwo": "The second method involves resizing your wheels by changing the lip and barrel sizes, if your wheels are multi piece wheels. This will cause positive and negative changes to the offset depending on whether the lip or barrel was resized and by how much. The table below is what I have used to calculate new offsets in the past. Here you can see the change in wheel offset for every inch or half inch change in lip and barrel size.",
+        "contentThree": "As an example, 18 x 11 -4  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 2.35 with a 3 inch lip and a 6.5 inch barrel. The lip was shortened by 1 inch, bringing the offset from -4 to 8.7 ( -4 + 12.7 ), and the barrel was shortened by 0.5 inches, bringing the final offset to 2.35 ( 8.7 - 6.35 ).",
+        "contentFour": "Another example, 18 x 11 -4  with a 4 inch lip and a 7 inch barrel  ===>  18 x 9.5 12.05 with a 2.5 inch lip and a 7 inch barrel. The lip was shortened by 1.5 inches, bringing the offset from -4 to 15.05 ( -4 + 12.7 + 6.35).",
+        "contentSource": "https://www.youtube.com/watch?v=L19eoOX58R4",
+        "contentSourceText": "How to measure your Wheel Offset / ET accurately",
+        "bottomPics": [],
+        "midPicsOne": [],
+        "midPicsTwo": [],
+        "topPics": ["from_floor_measurement", "from_hub_face", "hub_face_to_floor"],
+        "tableData": {
+            "headers": ["", "+ 1 inch", "+ 0.5 inch", "- 0.5 inch", "- 1 inch"],
+            "rows": [
+                ["Lip", "- 12.7", "- 6.35", "+ 6.35", "+ 12.7"],
+                ["Barrel", "+ 12.7", "+ 6.35", "- 6.35", "- 12.7"]
+            ]
+        },
+        "tableSource": "https://stanceworks.com/forums/forum/style/wheels-tires-brakes/3178-how-to-calculate-offset-after-lip-and-or-barrel-change?t=3145",
+        "tableSourceText": "StanceWorks"
+    },
+    {
+        "id": 1,
+        "date": "06-16-2024",
+        "postTitle": "Welcome to Spare Parts: Special Edition",
+        "contentOne": "Once upon a time Spare Parts was a World of Warcraft guild on Ashkandi Horde, built from the remnants of an older guild. I always thought the name sounded better for a car crew. So here we are. I'll be using this site to document my car build, share relevant notes I've taken like calculating offsets / calculating tire stretch / rebuilding or resizing 3 piece wheels etc with sources, and mostly scream into the void. I don't know how often this will be updated, but if anyone even reads this, then I hope it's not terrible :/",
+        "contentOneExample": "",
+        "contentTwo": "There used to be a car movement in Florida called Simply Clean, which valued keeping cars as stock looking as possible but adding tasteful mods that enhanced the stock look. For example, lowered cars, very slightly stretched tired, and wheels that sit flush with the fenders. That's the same philosophy I strive to bring to my car.",
+        "contentThree": "",
+        "contentFour": "",
+        "contentSource": "",
+        "contentSourceText": "",
+        "bottomPics": [],
+        "midPicsOne": [],
+        "midPicsTwo": [],
+        "topPics": [],
+        "tableData": {},
+        "tableSource": "",
+        "tableSourceText": ""
+    }
+]
