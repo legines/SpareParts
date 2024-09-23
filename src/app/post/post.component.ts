@@ -19,7 +19,7 @@ export class PostComponent implements OnInit {
   }
 
   topPicSource(pic, size) {
-    return `../../../assets/post-${this.post.id}/${pic}_${size}.png`;
+    return `/SpareParts/assets/post-${this.post.id}/${pic}_${size}.png`;
   }
 
   openPic(pic) {
