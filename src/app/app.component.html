@@ -1,11 +1,11 @@
 <div class="main">
   <div class="main-header">
-    <img [src]="logoUrl" alt="Logo" id="logo">
+    <img [src]="logoUrl" alt="Logo" id="Back_to_top">
   </div>
   <div class="main-content">
     <select class="post-select" [(ngModel)]="selectedId" (ngModelChange)="scrollIntoView()">
       <option value="" disabled selected>Select a post</option>
-      <option *ngFor="let post of postIds" [value]="post.title.split(' ')[0]">
+      <option *ngFor="let post of postIds" [value]="post.title.split(' ').slice(0, 3).join('_')">
         {{ post.title }}
       </option>
     </select>

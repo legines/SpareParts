@@ -29,10 +29,11 @@ export class AppComponent implements OnInit {
        this.logoUrl = this.logoArray[random];
     }, 2000);
     this.postIds = this.posts.map(post => ({id: post.id, title: post.postTitle}));
+    this.postIds.unshift({id: 0, title: 'Back to top'});
     // this.buildPosts();
   }
 
-  // commenting this out for now, will come back to it later when data is actually on a server instead of in a json file
+  // commenting this out for now, will come back to it later when data is actually on a db instead of in a json file
   // issues compiling with this code in place for some reason
   // buildPosts() {
   //   this.http.get('/assets/data/postData.json').subscribe(data => {
@@ -43,5 +44,8 @@ export class AppComponent implements OnInit {
 
   scrollIntoView() {
     document.getElementById(`${this.selectedId}`).scrollIntoView({behavior: 'smooth'});
+    setTimeout(() => {
+      this.selectedId = null;
+    }, 500);
   }
 }

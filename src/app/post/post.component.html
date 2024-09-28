@@ -1,4 +1,4 @@
-<div class="post" [id]="post.postTitle.split(' ')[0]">
+<div class="post" [id]="post.postTitle.split(' ').slice(0, 3).join('_')">
     <div class="post-header">
       <p class="post-title">
         {{ post.postTitle }}
