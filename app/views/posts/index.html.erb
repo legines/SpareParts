@@ -1,0 +1,14 @@
+<h1>Posts</h1>
+<div class="admin-buttons">
+    <%= link_to "New Post", new_post_path, class: "btn btn-primary" %>
+</div>
+<div class="posts">
+    <% @posts.each do |post| %>
+        <div class="post">
+            <h2><%= post.title %></h2>
+            <p>hi</p>
+            <p><em>Posted on <%= post.created_at.strftime("%B %d, %Y") %></em></p>
+            <%= link_to "...more", post_path(post) %>
+        </div>
+    <% end %>
+</div>
