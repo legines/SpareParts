@@ -23,6 +23,25 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="main">
+      <div class="main-header" data-controller="image-carousel" data-image-carousel-images="<%= ['SpareParts-black-gold.svg', 'SpareParts-black.svg', 'SpareParts-boulder-grey-pearl.svg', 'SpareParts-bright-white.svg', 'SpareParts-gold.svg', 'SpareParts-off-white.svg', 'SpareParts-purple.svg', 'SpareParts-white-text-only.svg'].map { |img| image_path(img) }.to_json %>">
+        <%= image_tag "SpareParts-black-gold.svg", alt: "Logo", id: "Back_to_top", data: { "image-carousel-target": "image" } %>
+      </div>
+      <div class="main-content">
+        <%= yield %>
+      </div>
+      <div class="bottom-bar">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <% if user_signed_in? %>
+          <%= link_to "New Post", new_post_path, class: "btn btn-primary" %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>
+        <% else %>
+          <%= link_to "Login", new_user_session_path %>
+        <% end %>
+      </div>
+    </div>
+
   </body>
 </html>

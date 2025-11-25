@@ -8,3 +8,145 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ html {
+  height: 100%;
+  background-color: #1D2125;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.main {
+  max-width: 736px;
+  margin: 0 auto;
+  padding: 0 1em 1em 1em;
+}
+
+.main-header {
+  margin-bottom: 2em;
+}
+
+.post {
+  font-family: arial,helvetica,sans-serif;
+  padding: 4em 0;
+}
+
+.post#Calculating_wheel_offsets .content-three, .post#Calculating_wheel_offsets .content-four, .post#Calculating_wheel_offsets .content-one-example {
+  background-color: #1e293b;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.post .mid-pics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post .mid-pics-container img {
+  width: 15em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  color: #b294bb;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.post-date {
+  color: #c5c8c6;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+.post-content {
+  color: #c5c8c6;
+}
+
+.post-content p {
+  line-height: 1.2;
+  font-size: 0.95em;
+}
+
+.post-content .table-source-text {
+  margin-bottom: 0;
+}
+
+.post-content .table-source-link {
+  font-size: 0.95em;
+  color: #81a2be;
+}
+
+.post-content .table-source-link:hover {
+  color: #5f89ac;
+}
+
+.post-content table th, .post-content table td {
+  border: 1px solid #44444d;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.post-content table tr td:first-child {
+  font-weight: bold;
+}
+
+.post .animate {
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -ms-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+.post .lightbox-container {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  background: rgba(0, 0, 0, .75);
+  visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.post .lightbox-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.post .lightbox-container.show img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #44444d;
+  margin: 0 auto;
+  width: 35em;
+}

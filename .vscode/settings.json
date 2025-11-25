@@ -1,0 +1,37 @@
+{
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "editor.guides.indentation": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.startupEditor": "none",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "markdown-pdf.displayHeaderFooter": false,
+    "markdown-pdf.highlightStyle": "atom-one-dark.css",
+    "markdown-pdf.breaks": true,
+    "markdown-pdf.styles": [
+        "Notes/markdown-pdf.css",
+    ],
+    "markdown-pdf.margin.bottom": "",
+    "markdown-pdf.margin.right": "",
+    "markdown-pdf.margin.top": "",
+    "markdown-pdf.margin.left": "",
+    "settingsSync.ignoredExtensions": [],
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "editor.indentSize": "tabSize",
+    "[ruby]": {"editor.tabSize": 2},
+    "[sass]": {"editor.tabSize": 2},
+    "[css]": {"editor.tabSize": 2},
+    "[html]": {"editor.tabSize": 4},
+    "[scss]": {"editor.tabSize": 2},
+    "[javascript]": {"editor.tabSize": 4},
+    "rubyLsp.featuresConfiguration": {},
+    "editor.stickyScroll.enabled": false,
+    "workbench.colorTheme": "BugFrag",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "explorer.confirmDragAndDrop": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.detectIndentation": false
+}

@@ -2,8 +2,10 @@
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# Seed data is loaded from Rails credentials to keep sensitive information secure.
+
+# Load seed users from credentials
+Rails.application.credentials.seed_users&.each do |user_data|
+  user = User.where(email: user_data[:email]).first_or_initialize
+  user.update!(password: user_data[:password], password_confirmation: user_data[:password])
+end
