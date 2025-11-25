@@ -1,10 +1,13 @@
 <div class="post">
     <div class="post-header">
+        <% if @post.cover_image.attached? %>
+            <%= image_tag @post.cover_image, class: "header-pic" %>
+        <% end %>
         <p class="post-title">
             <%= @post.title %>
         </p>
         <p class="post-date">
-            <%= @post.created_at.strftime("%B %d, %Y") %>
+            <%= @post.posted_at.strftime("%B %d, %Y") %>
         </p>
     </div>
     <div class="post-content">

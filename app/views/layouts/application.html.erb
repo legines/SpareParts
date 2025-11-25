@@ -32,8 +32,6 @@
         <%= yield %>
       </div>
       <div class="bottom-bar">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
         <% if user_signed_in? %>
           <%= link_to "New Post", new_post_path, class: "btn btn-primary" %> |
           <%= link_to "Logout", destroy_user_session_path, method: :delete, data: { turbo_method: :delete } %>

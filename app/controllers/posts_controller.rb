@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @pagy, @posts = pagy(@posts)
   end
 
   def show
@@ -46,6 +47,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :cover_image, :posted_at)
   end
 end
