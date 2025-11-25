@@ -143,11 +143,15 @@ body {
   margin-bottom: 1em;
 }
 
+.post-form .actions {
+  margin-bottom: 1em;
+}
+
 .new_user label{
   color: #c5c8c6;
 }
 
-h2 {
+h2, h1 {
   color: #c5c8c6;
 }
 

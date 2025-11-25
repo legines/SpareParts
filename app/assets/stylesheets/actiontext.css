@@ -431,8 +431,11 @@ trix-editor .attachment__metadata {
 .trix-content .attachment-gallery.attachment-gallery--2 > action-text-attachment,
 .trix-content .attachment-gallery.attachment-gallery--2 > .attachment, .trix-content .attachment-gallery.attachment-gallery--4 > action-text-attachment,
 .trix-content .attachment-gallery.attachment-gallery--4 > .attachment {
-  flex-basis: 50%;
-  max-width: 50%;
+  /* flex-basis: 50%;
+  max-width: 50%; */
+  flex: 1 0 33%;
+  padding: 0 0.5em;
+  max-width: 33%;
 }
 
 .trix-content action-text-attachment .attachment {
