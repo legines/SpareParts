@@ -32,6 +32,10 @@ body {
   flex-grow: 1;
 }
 
+.main-content a {
+  color: #81a2be;
+}
+
 .main-header {
   margin-bottom: 2em;
 }
@@ -39,25 +43,6 @@ body {
 .post {
   font-family: arial,helvetica,sans-serif;
   padding: 4em 0;
-}
-
-.post#Calculating_wheel_offsets .content-three, .post#Calculating_wheel_offsets .content-four, .post#Calculating_wheel_offsets .content-one-example {
-  background-color: #1e293b;
-  padding: 1em;
-  border-radius: 4px;
-}
-
-.post .mid-pics-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.post .mid-pics-container img {
-  width: 15em;
-  margin: 0.5em;
-  cursor: pointer;
 }
 
 .post-header {
@@ -81,73 +66,89 @@ body {
 
 .post-content {
   color: #c5c8c6;
-}
-
-.post-content p {
-  line-height: 1.2;
   font-size: 0.95em;
 }
 
-.post-content .table-source-text {
-  margin-bottom: 0;
+.post-form {
+  color: #c5c8c6;
 }
 
-.post-content .table-source-link {
+.post-form .field {
+  margin-bottom: 1em;
+}
+
+.pagy {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pagy a {
+  color: #c5c8c6;
+}
+
+.bottom-bar {
+  color: #c5c8c6;
+  align-self: flex-end;
+}
+
+.bottom-bar a {
+  color: #beba81;
+}
+
+.bottom-bar a:hover {
+  color: #9ca370;
+}
+
+.btn-secondary {
+  color: #beba81;
+}
+
+.btn-secondary:hover {
+  color: #9ca370;
+}
+
+.btn-danger {
+  margin: 1em 0;
+}
+
+.post-content a {
   font-size: 0.95em;
   color: #81a2be;
 }
 
-.post-content .table-source-link:hover {
+.post-content a:hover {
   color: #5f89ac;
 }
 
-.post-content table th, .post-content table td {
-  border: 1px solid #44444d;
-  padding: 0.5em;
-  text-align: center;
+.post-actions {
+  color: #c5c8c6;
+  margin-top: 2em;
 }
 
-.post-content table tr td:first-child {
-  font-weight: bold;
+.post-actions a {
+  color: #beba81;
 }
 
-.post .animate {
-  -webkit-transition: .15s ease-in-out;
-  -moz-transition: .15s ease-in-out;
-  -ms-transition: .15s ease-in-out;
-  -o-transition: .15s ease-in-out;
-  transition: .15s ease-in-out;
+.post-actions a:hover {
+  color: #9ca370;
 }
 
-.post .lightbox-container {
-  position: fixed;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  background: rgba(0, 0, 0, .75);
-  visibility: hidden;
-  opacity: 0;
-  visibility: hidden;
-  opacity: 0;
+.new_user .field {
+  margin-bottom: 1em;
 }
 
-.post .lightbox-container.show {
-  visibility: visible;
-  opacity: 1;
+.new_user .actions {
+  margin-bottom: 1em;
 }
 
-.post .lightbox-container.show img {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  max-width: 90%;
-  max-height: 90%;
+.new_user label{
+  color: #c5c8c6;
+}
+
+h2 {
+  color: #c5c8c6;
 }
 
 hr {
@@ -156,4 +157,31 @@ hr {
   background: #44444d;
   margin: 0 auto;
   width: 35em;
+}
+
+.lightbox-trigger {
+  cursor: pointer;
+}
+
+.lightbox-modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-modal.show {
+  display: flex;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }

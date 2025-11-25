@@ -71,6 +71,7 @@ trix-toolbar .trix-button--icon {
   width: 2.6em;
   height: 1.6em;
   max-width: calc(0.8em + 4vw);
+  background-color: #c5c8c6;
   text-indent: -9999px; }
   @media (max-width: 768px) {
     trix-toolbar .trix-button--icon {
@@ -367,12 +368,12 @@ trix-editor .attachment__metadata {
     display: inline-block;
     width: 100%;
     vertical-align: top;
-    font-family: monospace;
-    font-size: 0.9em;
-    padding: 0.5em;
-    white-space: pre;
-    background-color: #eee;
-    overflow-x: auto; }
+    font-size: 1.1em;
+    padding: 1.5em;
+    white-space: wrap;
+    background-color: #1e293b;
+    overflow-x: auto;
+    border-radius: 4px; }
   .trix-content img {
     max-width: 100%;
     height: auto; }
