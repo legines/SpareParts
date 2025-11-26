@@ -13,7 +13,8 @@
                 </p>
             </div>
             <div class="post-content">
-                <%= post.content %>
+                <%# post.content %>
+                <%= truncate(strip_tags(post.content.to_s), length: 550) %>
             </div>
             <div class="post-actions">
                 <%= link_to "...more", post_path(post) %>
