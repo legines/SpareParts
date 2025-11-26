@@ -88,6 +88,10 @@ body {
   color: #c5c8c6;
 }
 
+.pagy a:not(:last-child) {
+  margin-right: 5px;
+}
+
 .bottom-bar {
   color: #c5c8c6;
   align-self: flex-end;
