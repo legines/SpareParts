@@ -1,24 +1,3 @@
-# README
+![Logo](app/assets/images/SpareParts-bright-white.svg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Just another generic car blog built in Rails to document build progess, mistakes, and notes I've taken. Updated every once in a while, as there are only so many car parts to buy and events to attend.
