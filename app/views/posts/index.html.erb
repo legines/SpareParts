@@ -12,12 +12,11 @@
                     <%= post.posted_at.strftime("%B %d, %Y") %>
                 </p>
             </div>
-            <div class="post-content">
-                <%# post.content %>
-                <%= truncate(strip_tags(post.content.to_s), length: 550) %>
+            <div class="post-content index-page">
+                <%= post.content %>
             </div>
             <div class="post-actions">
-                <%= link_to "...more", post_path(post) %>
+                <%= link_to "[ read more ]", post_path(post) %>
             </div>
         </div>
         <hr />

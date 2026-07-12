@@ -26,6 +26,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 98vh;
+  border-left: 1px dotted rgba(255,255,255,0.15);
+  border-right: 1px dotted rgba(255,255,255,0.15);
 }
 
 .main-content {
@@ -41,20 +43,25 @@ body {
 }
 
 .post {
-  font-family: arial,helvetica,sans-serif;
+  font-family: 'VT323', 'Courier New', monospace;
   padding: 4em 0;
 }
 
 .post-header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.75em;
 }
 
 .post-title {
+  font-family: 'Press Start 2P', monospace;
   color: #b294bb;
   font-weight: 700;
   font-size: 1em;
   margin-bottom: 0;
+  line-height: 1.8;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .post-date {
@@ -62,11 +69,17 @@ body {
   font-weight: bold;
   font-size: 0.8em;
   margin-top: 0;
+  letter-spacing: 0.05em;
 }
 
 .post-content {
   color: #c5c8c6;
   font-size: 0.95em;
+}
+
+.post-content.index-page {
+  height: 6em;
+  overflow: hidden;
 }
 
 .post-form {
@@ -82,35 +95,67 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 6px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.85em;
 }
 
-.pagy a {
-  color: #c5c8c6;
+.pagy a, .pagy span {
+  color: #888880;
+  text-decoration: none;
+  border: 1px dotted rgba(255,255,255,0.2);
+  padding: 0.4em 0.7em;
+  letter-spacing: 0.05em;
+}
+
+.pagy a:hover {
+  color: #ffffff;
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.06);
 }
 
 .pagy a:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 0;
 }
 
 .bottom-bar {
   color: #c5c8c6;
   align-self: flex-end;
+  padding-top: 1.5em;
+  /* border-top: 1px dotted rgba(255,255,255,0.15); */
+  width: 100%;
+  text-align: right;
+  font-size: 0.95em;
+  margin-top: 2em;
 }
 
 .bottom-bar a {
   color: #beba81;
+  text-decoration: none;
+  border: 1px dotted rgba(255,255,255,0.3);
+  padding: 0.2em 0.7em;
+  letter-spacing: 0.05em;
 }
 
 .bottom-bar a:hover {
   color: #9ca370;
+  border-color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.06);
 }
 
 .btn-secondary {
   color: #beba81;
+  text-decoration: none;
+  border: 1px dotted rgba(255,255,255,0.3);
+  padding: 0.2em 0.7em;
+  letter-spacing: 0.05em;
+  font-size: 0.95em;
 }
 
 .btn-secondary:hover {
   color: #9ca370;
+  border-color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.06);
 }
 
 .btn-danger {
@@ -120,6 +165,7 @@ body {
 .post-content a {
   font-size: 0.95em;
   color: #81a2be;
+  text-decoration-style: dotted;
 }
 
 .post-content a:hover {
@@ -133,10 +179,17 @@ body {
 
 .post-actions a {
   color: #beba81;
+  text-decoration: none;
+  border: 1px dotted rgba(255,255,255,0.4);
+  padding: 0.2em 0.7em;
+  letter-spacing: 0.1em;
+  font-size: 0.95em;
 }
 
 .post-actions a:hover {
   color: #9ca370;
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.7);
 }
 
 .new_user .field {
@@ -161,10 +214,9 @@ h2, h1 {
 
 hr {
   border: 0;
-  height: 1px;
-  background: #44444d;
+  border-top: 1px dotted rgba(255,255,255,0.2);
   margin: 0 auto;
-  width: 35em;
+  width: 100%;
 }
 
 .lightbox-trigger {
